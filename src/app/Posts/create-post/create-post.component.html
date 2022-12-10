@@ -1,0 +1,6 @@
+<div style="border-style:dotted;height:auto;margin:10px">
+    <label style="color:blueviolet">AddNewPost</label>
+    <app-post (postAdded)="showList($event)" ></app-post>
+    <h2 style="color:blue">Total Post Count:{{count}}</h2>
+    <app-listitemofpost [postData] ="postmodel"></app-listitemofpost>
+</div>
